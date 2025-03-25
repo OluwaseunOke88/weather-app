@@ -1,0 +1,137 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(to top right, #64b3f4, #c2e9fb);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+  max-width: 600px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  color: #333;
+  font-size: 3em;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  width: 70%;
+  max-width: 300px;
+  border-radius: 25px;
+  border: 2px solid #008CBA;
+  margin-right: 10px;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #00aaff;
+  outline: none;
+}
+
+button {
+  padding: 12px 20px;
+  font-size: 16px;
+  background-color: #008CBA;
+  color: white;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #00aaff;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+.forecast-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.forecast-item {
+  background-color: #ffffff;
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.forecast-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.forecast-item p {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #555;
+}
+
+.weather-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.error-message {
+  color: #ff4d4d;
+  font-size: 18px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .App {
+    padding: 15px;
+  }
+
+  input {
+    width: 60%;
+  }
+
+  button {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .App {
+    width: 90%;
+  }
+
+  input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
