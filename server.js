@@ -50,3 +50,8 @@ app.get("/forecast", async (req, res) => {
 app.listen(port, () => {
     console.log(`Server running on port ${port}`);
 });
+
+app.get('/', (req, res) => {
+    res.send('Welcome to the Weather App Backend!');
+  });
+  
