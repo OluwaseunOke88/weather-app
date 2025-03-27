@@ -8,7 +8,7 @@ const port = process.env.PORT || 5000;
 app.use(cors());
 
 // OpenWeather API Key and Base URL
-const API_KEY = "b1e8e7d632306ab7fd85da153b4fd4cb";
+const API_KEY = "d4f1e44a5b3642375cbda205ee940248";
 const BASE_URL = "https://api.openweathermap.org/data/2.5/";
 
 // Endpoint to get current weather data
